@@ -1,7 +1,9 @@
 //define variable for app
 const app = {};
 
-app.init = function(){};
+app.init = function(){
+  app.getCountries();
+};
 
 app.apiUrl = 'https://restcountries.eu/rest/v2/all';
 
