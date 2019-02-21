@@ -7,6 +7,11 @@ app.init = function(){
 
 app.apiUrl = 'https://restcountries.eu/rest/v2/all';
 
+$(document).ready(function () {
+  app.init();
+});
+
+//this is declaring the ftn, but you have to call it to be able to do anything with it. 
 app.getCountries = () => {
   $.ajax({
     url: app.apiUrl,
@@ -19,13 +24,6 @@ app.getCountries = () => {
 
 
 
-
-
-
-
-$(document).ready(function(){
-  app.init();
-});
 
 //make an AJAX request to get API data for countries
 
