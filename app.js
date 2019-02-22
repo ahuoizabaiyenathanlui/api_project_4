@@ -15,7 +15,7 @@ app.getCountryByCode = function() {
       method: 'GET',
       dataType: 'json',
       }).then((result) => {
-        console.log(result);
+        app.countriesByLanguage(result)
         // PASS IN METHOD TO DISPLAY RESULTS //
       })  
   }); 
@@ -52,13 +52,46 @@ app.getCountries = () => {
 
 
 
-// app.countriesByLanguage = (countries) => {
-//   const countryList = countries.map((countries) => {
-//       console.log(countries);
-//   });
+app.countriesByLanguage = (countries) => {
+  const countryList = countries.map((countries) => {
+    // const {countryName, countryFlag, countryRegion, countryPopulation} = app.countriesByLanguage;
+      console.log(countries.name, countries.flag, countries.region, countries.population);
+  });
+  // console.log(countryList)
+};
+
+app.displayResult = (userChoice) => {
+  const resultList = userChoice.filter((index) => {
+    return index;
+  });
+  resultList.forEach((result) => {
+    $('.results').append(`
+        <div>${result.flag}</div>
+        <h2>${result.name}</h2>
+        <h3>${result.region}</h3>
+        <p>${result.population}</p>
+        `)
+  })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//   app.countryFlags = (flags) => {
+//     const flagList = countries.map((flags) => {
+//       console.log(countries.flag);
+//     });
    
-   // filter the array for our desired items based on LANGUAGE
-  //  countries.filter()
+//    // filter the array for our desired items based on LANGUAGE
+//   //  countries.filter()
 // };
 
 // app.countriesByFlag = (countries) => {
