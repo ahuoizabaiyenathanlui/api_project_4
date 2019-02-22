@@ -15,8 +15,7 @@ app.getCountryByCode = function() {
       method: 'GET',
       dataType: 'json',
       }).then((result) => {
-        app.countriesByLanguage(result)
-        // PASS IN METHOD TO DISPLAY RESULTS //
+        app.countriesByLanguage(result);
       })  
   }); 
 }
@@ -29,50 +28,52 @@ app.init = function(){
 };
 
 
-
-// app.apiUrl = 'https://restcountries.eu/rest/v2/lang/en';
 // create variable for language endpoint
 // link appropriate code with dropdown menu //
 
-/* 
-app.getCountries = () => {
-      $.ajax({
-        url: app.apiUrl,
-        method: 'GET',
-        dataType: 'json',
-      }).then((result) => {
-        app.getCountryByCode(result);
-        // PASS IN METHOD TO DISPLAY RESULTS //
-      })
-    }
-
-*/
 
 //make an AJAX request to get API data for countries
 
 
 
 app.countriesByLanguage = (countries) => {
-  const countryList = countries.map((countries) => {
-    // const {countryName, countryFlag, countryRegion, countryPopulation} = app.countriesByLanguage;
-      console.log(countries.name, countries.flag, countries.region, countries.population);
-  });
-  // console.log(countryList)
-};
+  // const countryList = countries.map((countries) => {
+    
+  //     console.log(countries.name, countries.flag, countries.region, countries.population);
+  // });
+  countries.forEach(function(result){
+      console.log(result);
+      let country = $('.countryName');
+      let region = $('.region');
 
-app.displayResult = (userChoice) => {
-  const resultList = userChoice.filter((index) => {
-    return index;
-  });
-  resultList.forEach((result) => {
-    $('.results').append(`
-        <div>${result.flag}</div>
-        <h2>${result.name}</h2>
-        <h3>${result.region}</h3>
-        <p>${result.population}</p>
-        `)
-  })
-}
+      country.html(result.name)
+      region.html(result.region)
+
+//each country will be an li
+
+      // console.log(result.name)
+    //   $('.results').html(`
+    //     <div>${result.flag}</div>
+    //     <h2>${result.name}</h2>
+    //     <h3>${result.region}</h3>
+    //     <p>${result.population}</p>`)
+    })
+  };
+// const {countryName, countryFlag, countryRegion, countryPopulation} = app.countriesByLanguage;
+
+// app.displayResult = (userChoice) => {
+//   const resultList = userChoice.filter((index) => {
+//     return index;
+//   });
+//   resultList.forEach((result) => {
+//     $('.results').append(`
+//         <div>${result.flag}</div>
+//         <h2>${result.name}</h2>
+//         <h3>${result.region}</h3>
+//         <p>${result.population}</p>
+//         `)
+//   })
+// }
 
 
 
