@@ -9,7 +9,6 @@ app.getCountryByCode = function() {
   $('#language').change(function(){
     let code = $('#language option:selected').attr("value");
     app.apiUrl = searchUrl + code;
-    console.log(app.apiUrl);
   
     $.ajax({
       url: app.apiUrl,
