@@ -6,7 +6,9 @@ app.init = function(){
   // app.displayCountries();
 };
 
-app.apiUrl = 'https://restcountries.eu/rest/v2/all';
+app.apiUrl = 'https://restcountries.eu/rest/v2/lang/en';
+// create variable for language endpoint
+// link appropriate code with dropdown menu //
 
 
 
@@ -18,14 +20,17 @@ app.getCountries = () => {
     method: 'GET',
     dataType: 'json',
   }).then((result) => {
-    app.displayCountries(result);
+    app.countriesByLanguage(result);
     // PASS IN METHOD TO DISPLAY RESULTS //
   })
 }
 
 
-app.displayCountries = (countries) => {
-   console.log(countries)
+app.countriesByLanguage = (countries) => {
+  const countryList = countries.map((countries) => {
+      return countries.name;
+  });
+  console.log(countryList)
    
    // filter the array for our desired items based on LANGUAGE
   //  countries.filter()
