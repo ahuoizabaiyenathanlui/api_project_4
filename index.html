@@ -4,21 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="jqvmap-master/dist/jqvmap.css">
-  <link rel="stylesheet" href="style.css">
+  <title>Countries of the World by Language</title>
+
+  <!-- <link rel="stylesheet" href="jqvmap-master/dist/jqvmap.css"> -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Alegreya:500|Lato|Rancho" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="wrapper">
-      <h1>Title of Site here</h1>
-      <h2>Description Here</h2>
-      <div id="vmap" style="width: 100vw; height: 85vh;"></div>
-  </header>
-
+      <h1>Countries of the World By Language</h1>
+      <h2>Select a language to discover where it is spoken</h2>
+      <!-- <div id="vmap" style="width: 100vw; height: 85vh;"></div> -->
       <form action="">
-        <label for="language">Select a language</label>
+        <label for="language">Select a language </label>
         <select name="language" id="language">
+          <option value=""></option>
           <option value="ar">Arabic</option>
           <option value="bn">Bengali</option>
           <option value="en">English</option>
@@ -32,7 +34,8 @@
         </select>
       </form>
     </div>
- 
+  </header>
+
   <main>
     <section>
       <div class="wrapper" class="results">

@@ -53,11 +53,15 @@ app.countriesByLanguage = (countries) => {
     let region = (result.region);
     let flag = (result.flag);
     let population = (result.population);
+    let capital = (result.capital);
     $('ul').append(`<li>
-        <div class="flagBox"><img src=${flag} alt="">
         <h2>${country}</h2>
-        <h3>${region}</h3>
-        <h4>${population}</h4>
+        <div class="flagBox">
+          <img src=${flag} alt="">
+        </div>
+        <h3>Region: ${region}</h3>
+        <h4>Population: ${population}</h4>
+        <h4>Capital: ${capital}</h4>   
       </li>`);
       // let country = $('.countryName');
       // let region = $('.region');
