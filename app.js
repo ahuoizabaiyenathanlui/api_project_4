@@ -15,6 +15,7 @@ app.getCountryByCode = function() {
       method: 'GET',
       dataType: 'json',
       }).then((result) => {
+        $('ul').empty();
         app.countriesByLanguage(result);
       })  
   }); 
@@ -22,7 +23,6 @@ app.getCountryByCode = function() {
 
 
 app.init = function(){
-  // app.getCountries();
   app.getCountryByCode();
   // app.displayCountries();
 };
@@ -43,11 +43,20 @@ app.countriesByLanguage = (countries) => {
   // });
   countries.forEach(function(result){
       console.log(result);
-      let country = $('.countryName');
-      let region = $('.region');
-
-      country.html(result.name)
-      region.html(result.region)
+    let country = (result.name);
+    let region = (result.region);
+    let flag = (result.flag);
+    let population = (result.population);
+    $('ul').append(`<li>
+        <h2>${country}</h2>
+        <h3>${region}</h3>
+        <h4>${population}</h4>
+      </li>`);
+      // let country = $('.countryName');
+      // let region = $('.region');
+      
+      // country.html(result.name)
+      // region.html(result.region)
 
 //each country will be an li
 
