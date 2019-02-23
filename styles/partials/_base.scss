@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 125%;  
+}
+/*
+font-family: 'Alegreya', serif;
+font-family: 'Rancho', cursive;
+font-family: 'Lato', sans-serif;
+*/
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: white;
+  color: #00003E;
+}
+
+.wrapper {
+  width: 1600px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+}

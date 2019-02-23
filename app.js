@@ -55,7 +55,7 @@ app.countriesByLanguage = (countries) => {
     let population = (result.population);
     let capital = (result.capital);
     $('ul').append(`<li>
-        <h2>${country}</h2>
+        <h2 class="countryName">${country}</h2>
         <div class="flagBox">
           <img src=${flag} alt="">
         </div>

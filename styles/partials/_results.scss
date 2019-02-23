@@ -1,0 +1,14 @@
+li {
+  list-style-type: none;
+  border: 1px solid saddlebrown;
+  width: 25%;
+}
+
+.flagBox {
+  border: 1px solid black;
+}
+
+#countryInfo {
+  display: flex;
+  flex-wrap: wrap;
+}
