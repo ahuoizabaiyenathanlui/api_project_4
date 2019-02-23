@@ -1,9 +1,16 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 html {
   font-size: 125%;  
+}
+
+@media(max-width: 1320px){
+  html {
+    font-size: 100%;
+  }
 }
 /*
 font-family: 'Alegreya', serif;
@@ -36,6 +43,7 @@ section {
 img {
   max-width: 100%;
   width: 100%;
+  display: block;
 }
 
 footer {

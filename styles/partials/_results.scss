@@ -6,6 +6,27 @@ li {
   background: whitesmoke;
 }
 
+@media(max-width: 980px){
+  li {
+    width: 50%;
+  }
+
+  // .flagBox {
+  //   float: left;
+  //   width: 50%;
+  // }
+}
+
+@media(max-width: 500px){
+  li {
+    width: 100%;
+  }
+
+  .wrapper {
+    max-width: 98%;
+  }
+}
+
 .flagBox {
   border: 1px solid black;
 }
@@ -24,4 +45,10 @@ h3 {
   margin-top: 3%;
 }
 
+
+@media (max-width: 980px) {
+  .flagbox {
+    margin-right: 3%;
+  }
+}
 
