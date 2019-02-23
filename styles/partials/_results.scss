@@ -1,7 +1,9 @@
 li {
   list-style-type: none;
-  border: 1px solid saddlebrown;
+  border: 1px solid #008cc3;
   width: 25%;
+  padding: 1% 2%;
+  background: whitesmoke;
 }
 
 .flagBox {
@@ -12,3 +14,14 @@ li {
   display: flex;
   flex-wrap: wrap;
 }
+
+ul h2 {
+  margin-bottom: 2%;
+  font-size: 1.6rem;
+}
+
+h3 {
+  margin-top: 3%;
+}
+
+

@@ -60,8 +60,8 @@ app.countriesByLanguage = (countries) => {
           <img src=${flag} alt="">
         </div>
         <h3>Region: ${region}</h3>
-        <h4>Population: ${population}</h4>
-        <h4>Capital: ${capital}</h4>   
+        <h3>Population: ${population}</h3>
+        <h3>Capital: ${capital}</h3>   
       </li>`);
       // let country = $('.countryName');
       // let region = $('.region');

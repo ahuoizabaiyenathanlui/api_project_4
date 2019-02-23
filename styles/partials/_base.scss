@@ -11,18 +11,33 @@ font-family: 'Rancho', cursive;
 font-family: 'Lato', sans-serif;
 */
 
+/*text - #001F3F;
+background - #7FDBFF
+
+background - #ddd
+text - #001F3F.navy */
+
 body {
   font-family: 'Lato', sans-serif;
-  background: white;
-  color: #00003E;
+  background: #008cc3;
+  color: #001F3F;
+}
+
+
+section {
+  padding-top: 40px;
 }
 
 .wrapper {
-  width: 1600px;
-  max-width: 90%;
+  width: 1800px;
+  max-width: 96%;
   margin: 0 auto;
 }
 img {
   max-width: 100%;
   width: 100%;
+}
+
+footer {
+  padding-bottom: 4%;
 }
