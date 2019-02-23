@@ -26,7 +26,9 @@ text - #001F3F.navy */
 
 body {
   font-family: 'Lato', sans-serif;
-  background: #008cc3;
+  background: #000046;  
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046); 
+  background: linear-gradient(to right, #1CB5E0, #000046); 
   color: #001F3F;
 }
 

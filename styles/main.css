@@ -155,7 +155,12 @@ background - #ddd
 text - #001F3F.navy */
 body {
   font-family: 'Lato', sans-serif;
-  background: #008cc3;
+  background: #000046;
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+  background: -webkit-gradient(linear, left top, right top, from(#1CB5E0), to(#000046));
+  background: -webkit-linear-gradient(left, #1CB5E0, #000046);
+  background: -o-linear-gradient(left, #1CB5E0, #000046);
+  background: linear-gradient(to right, #1CB5E0, #000046);
   color: #001F3F; }
 
 section {
@@ -177,17 +182,26 @@ footer {
 header {
   text-align: center;
   padding-top: 4%;
-  color: black; }
+  color: whitesmoke; }
   header h1 {
     font-family: 'Alegreya', serif;
-    font-size: 3rem; }
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px #000; }
   header h2 {
     font-family: 'Rancho', cursive;
     font-size: 1.7rem;
-    display: inline-block; }
+    display: inline-block;
+    text-shadow: 1px 1px 1px #000;
+    margin-right: 1%; }
 
 form {
   margin-top: 3%; }
+  form select {
+    font-size: 1.1rem;
+    background: whitesmoke;
+    letter-spacing: 1px; }
+    form select option {
+      padding-left: 4px; }
 
 li {
   list-style-type: none;
