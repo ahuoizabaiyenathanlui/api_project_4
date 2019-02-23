@@ -25,6 +25,12 @@ app.getCountryByCode = function() {
 app.init = function(){
   app.getCountryByCode();
   // app.displayCountries();
+  
+  // MAP THINGG //
+  // $('#vmap').vectorMap(
+  // {
+  //   map: 'world_en' 
+  // })
 };
 
 
@@ -48,6 +54,7 @@ app.countriesByLanguage = (countries) => {
     let flag = (result.flag);
     let population = (result.population);
     $('ul').append(`<li>
+        <div class="flagBox"><img src=${flag} alt="">
         <h2>${country}</h2>
         <h3>${region}</h3>
         <h4>${population}</h4>

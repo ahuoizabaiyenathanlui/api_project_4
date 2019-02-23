@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-
+  <link rel="stylesheet" href="jqvmap-master/dist/jqvmap.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,6 +13,9 @@
     <div class="wrapper">
       <h1>Title of Site here</h1>
       <h2>Description Here</h2>
+      <div id="vmap" style="width: 100vw; height: 85vh;"></div>
+  </header>
+
       <form action="">
         <label for="language">Select a language</label>
         <select name="language" id="language">
@@ -29,7 +32,7 @@
         </select>
       </form>
     </div>
-  </header>
+ 
   <main>
     <section>
       <div class="wrapper" class="results">
@@ -39,6 +42,7 @@
         <h3 class="region"></h3>
         <p class="population"></p> -->
       </div>
+      
     </section>
   </main>
   <footer>
@@ -47,9 +51,9 @@
   </footer>
 
 
-
-  
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+  <script src="jqvmap-master/dist/jquery.vmap.js"></script>
+  <script src="jqvmap-master/dist/maps/jquery.vmap.world.js"></script>
 
   <script src="app.js"></script>
 
