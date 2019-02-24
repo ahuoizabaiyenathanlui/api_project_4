@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Countries of the World by Language</title>
 
-  <!-- <link rel="stylesheet" href="jqvmap-master/dist/jqvmap.css"> -->
+  <link rel="stylesheet" href="jqvmap-master/dist/jqvmap.css">
   <link rel="stylesheet" href="styles/main.css">
 
   <link href="https://fonts.googleapis.com/css?family=Alegreya:500|Lato|Rancho" rel="stylesheet">
@@ -15,8 +15,6 @@
   <header>
     <div class="wrapper">
       <h1>Countries of the World By Language</h1>
-      
-      <!-- <div id="vmap" style="width: 100vw; height: 85vh;"></div> -->
       <form action="">
         <label for="language"><h2>Choose a language</h2></label>
         <select name="language" id="language">
@@ -32,7 +30,8 @@
           <option value="es">Spanish</option>
           <option value="zh">Mandarin Chinese</option>
         </select>
-      </form>
+      </form> 
+      <div id="vmap" style="width: 90vw; height: 60vh;"></div>
     </div>
   </header>
 
@@ -48,8 +47,6 @@
 
 
   </footer>
-
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="jqvmap-master/dist/jquery.vmap.js"></script>
   <script src="jqvmap-master/dist/maps/jquery.vmap.world.js"></script>

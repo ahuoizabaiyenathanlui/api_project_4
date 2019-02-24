@@ -139,20 +139,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 125%; }
 
-@media (max-width: 1320px) {
+@media (max-width: 1500px) {
   html {
     font-size: 100%; } }
 
-/*
-font-family: 'Alegreya', serif;
-font-family: 'Rancho', cursive;
-font-family: 'Lato', sans-serif;
-*/
-/*text - #001F3F;
-background - #7FDBFF
+@media (max-width: 1320px) {
+  html {
+    font-size: 90%; } }
 
-background - #ddd
-text - #001F3F.navy */
 body {
   font-family: 'Lato', sans-serif;
   background: #000046;
@@ -163,9 +157,6 @@ body {
   background: linear-gradient(to right, #1CB5E0, #000046);
   color: #001F3F; }
 
-section {
-  padding-top: 40px; }
-
 .wrapper {
   width: 1800px;
   max-width: 96%;
@@ -173,11 +164,14 @@ section {
 
 img {
   max-width: 100%;
-  width: 100%;
   display: block; }
 
 footer {
   padding-bottom: 4%; }
+
+#vmap {
+  margin: 0 auto;
+  background: none; }
 
 header {
   text-align: center;
@@ -195,7 +189,7 @@ header {
     margin-right: 1%; }
 
 form {
-  margin-top: 3%; }
+  margin-top: 1%; }
   form select {
     font-size: 1.1rem;
     background: whitesmoke;
@@ -210,18 +204,13 @@ li {
   padding: 1% 2%;
   background: whitesmoke; }
 
-@media (max-width: 980px) {
-  li {
-    width: 50%; } }
-
-@media (max-width: 500px) {
-  li {
-    width: 100%; }
-  .wrapper {
-    max-width: 98%; } }
-
 .flagBox {
-  border: 1px solid black; }
+  border: 1px solid black;
+  width: 100%;
+  max-width: 100%;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center; }
 
 #countryInfo {
   display: -webkit-box;
@@ -232,11 +221,25 @@ li {
 
 ul h2 {
   margin-bottom: 2%;
-  font-size: 1.6rem; }
+  font-size: 1.4rem; }
 
 h3 {
   margin-top: 3%; }
 
 @media (max-width: 980px) {
+  li {
+    width: 50%; } }
+
+@media (max-width: 980px) {
   .flagbox {
     margin-right: 3%; } }
+
+@media (max-width: 500px) {
+  li {
+    width: 100%; }
+  .flagBox {
+    width: 40%;
+    float: left;
+    margin-right: 5%; }
+  .wrapper {
+    max-width: 98%; } }

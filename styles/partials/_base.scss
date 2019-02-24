@@ -7,22 +7,17 @@ html {
   font-size: 125%;  
 }
 
-@media(max-width: 1320px){
+@media(max-width: 1500px){
   html {
     font-size: 100%;
   }
 }
-/*
-font-family: 'Alegreya', serif;
-font-family: 'Rancho', cursive;
-font-family: 'Lato', sans-serif;
-*/
 
-/*text - #001F3F;
-background - #7FDBFF
-
-background - #ddd
-text - #001F3F.navy */
+@media(max-width: 1320px){
+  html {
+    font-size: 90%;
+  }
+}
 
 body {
   font-family: 'Lato', sans-serif;
@@ -32,11 +27,6 @@ body {
   color: #001F3F;
 }
 
-
-section {
-  padding-top: 40px;
-}
-
 .wrapper {
   width: 1800px;
   max-width: 96%;
@@ -44,7 +34,6 @@ section {
 }
 img {
   max-width: 100%;
-  width: 100%;
   display: block;
 }
 
