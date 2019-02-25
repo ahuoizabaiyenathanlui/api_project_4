@@ -54,7 +54,7 @@ app.countriesByLanguage = (countries) => {
     $('ul').append(`<li>
         <h2 class="countryName">${country}</h2>
         <div class="flagBox">
-          <img src=${flag} alt="">
+          <img src=${flag} alt="official flag of ${country}">
         </div>
         <h3>Region: ${region}</h3>
         <h3>Population: ${population}</h3>
