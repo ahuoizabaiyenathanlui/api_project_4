@@ -1,22 +1,13 @@
-//define variable for app
+
 const app = {};
 const searchUrl = 'https://restcountries.eu/rest/v2/lang/';
 let finalUrl = '';
-
-// STRETCH GOAL ATTEMPTS//
-// app.getCountriesByName = function (results){
-//   const alphaCode = results.map((index)=>{
-//     return index.alpha2Code;
-//   })
-//   console.log(alphaCode)
-// }
 
 app.getCountryByCode = function() {
   $('#language').change(function(){
     let code = $('#language option:selected').attr("value");
     app.apiUrl = searchUrl + code;
   
-    // make AJAX request to get API data for countries //
     $.ajax({
       url: app.apiUrl,
       method: 'GET',
@@ -33,7 +24,7 @@ app.getCountryByCode = function() {
 app.init = function(){
   app.getCountryByCode();
   
-  // MAP THINGG //
+  // MAP THING //
   $('#vmap').vectorMap(
   {
     map: 'world_en',
