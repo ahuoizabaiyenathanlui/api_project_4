@@ -8,3 +8,4 @@ It was developed by Ahuoiza Baiye and Nathan Lui.
 
 # Under development
 - upon selection of language, relevant countries should light up on the map
+- change background design
